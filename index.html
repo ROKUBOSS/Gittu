@@ -1,16 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gittu</title>
-    <!-- git push -u origin main -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banasree Plan</title>
+<style>
+  /* Global Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  /* Collapsible Button Styling */
+  .collapsible {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover and Active State Styling */
+  .active, .collapsible:hover {
+    background: linear-gradient(135deg, #3b41a1, #7a80ee);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Content Box Styling */
+  .content {
+    max-width: 100%;
+    padding: 20px;
+    display: none;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    line-height: 1.6;
+    transition: max-height 0.3s ease;
+  }
+
+  /* Paragraph Styling */
+  .content p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #4e54c8;
+    color: white;
+  }
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  .total-row {
+    font-weight: bold;
+    background-color: #f9f9f9;
+  }
+  h2 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+
+  .earning-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  .earning-list li {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+  }
+
+  .earning-list li:last-child {
+    border-bottom: none;
+  }
+
+  .earning-list li:hover {
+    background-color: #f9f9f9;
+  }
+
+  .earning-list li .source {
+    display: flex;
+    align-items: center;
+  }
+
+  .earning-list li .source i {
+    font-size: 20px;
+    color: #4CAF50;
+    margin-right: 10px;
+  }
+
+  .amount {
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .collapsible {
+      font-size: 16px;
+      padding: 15px;
+    }
+    .content p {
+      font-size: 15px;
+    }
+  }
+</style>
 </head>
 <body>
-    <h1>Hello</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat corrupti atque impedit, doloribus earum ipsum autem? Tempore numquam qui assumenda nihil harum odit ipsum quasi voluptas quae. Fugit, aperiam?</p>
-   <a href="https://www.prothomalo.com/" target="_blank">Done</a> <br>
-   <button>Click</button> <br>
-   <a href="holy.php" target="_blank">Php Page</a>
+
+<!-- Collapsible Buttons and Content Sections -->
+
+<button type="button" class="collapsible">Meeting Topic</button>
+<div class="content">
+    <h2>মিটিংয়ের জন্য গুরুত্বপূর্ণ প্রশ্ন</h2>
+    <div class="question-item">
+        <h3>আলোক শিখার জন্য কোন ধরনের উদ্যোগ নেওয়া হবে, এবং সেগুলো কীভাবে বাস্তবায়ন করা হবে?</h3>
+        <p>পরিকল্পনা, লক্ষ্য নির্ধারণ এবং সেগুলো বাস্তবায়নের কার্যকরী উপায়।</p>
+    </div>
+    <div class="question-list">
+        <div class="question-item">
+            <h3>ডিড (Due Diligence) কবে করা হবে?</h3>
+            <p>ডিড প্রক্রিয়া শুরুর নির্দিষ্ট সময় এবং প্রয়োজনীয় পদক্ষেপ নির্ধারণ।</p>
+        </div>
+        <div class="question-item">
+            <h3>কোম্পানির জন্য নতুন বিনিয়োগের ব্যবস্থা কীভাবে করা হবে?</h3>
+            <p>সম্ভাব্য বিনিয়োগ উৎস, বিনিয়োগকারীর খোঁজ, এবং ফান্ডিং প্রক্রিয়া নিয়ে আলোচনা।</p>
+        </div>
+       
+        <div class="question-item">
+            <h3>এই ব্যবসায় কতদিন পর্যন্ত বিনিয়োগ করে ফলাফল প্রত্যাশা করা হবে?</h3>
+            <p>ব্যবসার কার্যকারিতা ও লাভজনকতার জন্য নির্দিষ্ট সময়সীমা ও মূল্যায়ন পদ্ধতি নির্ধারণ।</p>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="collapsible">Devices-Cost</button>
+<div class="content">
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Quantity</th>
+      <th>Unit Price (BDT)</th>
+      <th>Total (BDT)</th>
+    </tr>
+    <tr>
+      <td>Interactive Flat Panel</td>
+      <td>1</td>
+      <td>265,000</td>
+      <td>265,000</td>
+    </tr>
+    <tr>
+      <td>Stand</td>
+      <td>1</td>
+      <td>20,000</td>
+      <td>20,000</td>
+    </tr>
+    <tr>
+      <td>Camera and Lens</td>
+      <td>1</td>
+      <td>220,000</td>
+      <td>220,000</td>
+    </tr>
+    <tr>
+      <td>Microphone (Rode Go II)</td>
+      <td>1</td>
+      <td>30,000</td>
+      <td>30,000</td>
+    </tr>
+    <tr>
+      <td>Tripod</td>
+      <td>1</td>
+      <td>15,000</td>
+      <td>15,000</td>
+    </tr>
+    <tr>
+      <td>Lights</td>
+      <td>1</td>
+      <td>15,000</td>
+      <td>15,000</td>
+    </tr>
+    <tr>
+      <td>Acoustic Foam</td>
+      <td>1</td>
+      <td>50,000</td>
+      <td>50,000</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="3">Total Cost</td>
+      <td>615,000</td>
+    </tr>
+  </table>
+</div>
+
+<button type="button" class="collapsible">Monthly-Cost</button>
+<div class="content">
+    <table>
+        <tr>
+          <th>Item</th>
+          <th>Cost (BDT)</th>
+        </tr>
+        <tr>
+          <td>Room Rent</td>
+          <td>12000</td>
+        </tr>
+        <tr>
+          <td>Bill (Current & Net)</td>
+          <td>8000</td>
+        </tr>
+        <tr>
+          <td>Videographer</td>
+          <td>20000</td>
+        </tr>
+        <tr>
+          <td>Digital Marketer</td>
+          <td>10000</td>
+        </tr>
+        <tr>
+          <td>Video Editor</td>
+          <td>20000</td>
+        </tr>
+        <tr>
+          <td>Customer Care</td>
+          <td>15000</td>
+        </tr>
+        <tr>
+          <td>Online Promotion</td>
+          <td>15000</td>
+        </tr>
+        <tr>
+          <th>Total Cost</th>
+          <th>1,00,000</th>
+        </tr>
+    </table>
+</div>
+<button type="button" class="collapsible">Earning Sources</button>
+<div class="content">
+    <h2>Earning Sources</h2>
+    <ul class="earning-list">
+      <li>
+        <div class="source"><i>💰</i> Social Media Ad Monetization</div>
+        <span class="amount">50,000 BDT</span>
+      </li>
+      <li>
+        <div class="source"><i>🌐</i> 3 Websites</div>
+        <span class="amount">90,000 BDT</span>
+      </li>
+      <li>
+        <div class="source"><i>🏢</i> Board Rent</div>
+        <span class="amount">15,000 BDT</span>
+      </li>
+      <li>
+        <div class="source"><i>📸</i>Photography & Videography</div>
+        <span class="amount">15,000 BDT</span>
+      </li>
+      <li>
+        <div class="source"><i>🎬</i> Video Editing</div>
+        <span class="amount">20,000 BDT</span>
+      </li>
+      <li>
+        <div class="source"><i>📚</i> Selling Courses Online</div>
+        <span class="amount">?</span>
+      </li>
+    </ul>
+    
+</div>
+
+<script>
+  // JavaScript for Collapsible Functionality
+  var coll = document.getElementsByClassName("collapsible");
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+
 </body>
 </html>
